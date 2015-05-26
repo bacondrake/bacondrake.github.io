@@ -1,0 +1,48 @@
+!!!
+%html
+  %head
+    %meta{charset: "utf-8"}
+    %meta{content: "chrome=1", "http-equiv" => "X-UA-Compatible"}
+    %title Bacondrake.GitHub.io by bacondrake
+    %link{href: "stylesheets/normalize.css", rel: "stylesheet"}
+    %link{href: "stylesheets/styles.css", rel: "stylesheet"}
+    %link{href: "stylesheets/pygment_trac.css", rel: "stylesheet"}
+    %script{src: "https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"}
+    %script{href: "javascripts/main.js"}
+    /[if lt IE 9]
+    %script{src: "//html5shiv.googlecode.com/svn/trunk/html5.js"}
+    %meta{content: "width=device-width, initial-scale=1, user-scalable=no", name: "viewport"}
+
+  %body
+    %header
+      %h1 Bacondrake.GitHub.io
+      %p
+    #banner
+      %span#logo
+      %a.button.fork{href: "https://github.com/bacondrake"}
+        %strong View On GitHub
+    / end banner
+    .wrapper
+      %nav
+        %ul
+          %li.tag-h1
+            %a{href: "/"}
+              %strong Home
+          %li.tag-h1
+            %a{href: "/about"}
+              %strong About
+          %li.tag-h1
+            %a{href: "/programming-tools"}
+              %strong Programming tools
+          %li.tag-h1
+            %a{href: "/dictionary"}
+              %strong Dictionary
+
+      = yield
+
+      %footer
+        %p
+          %small
+            Hosted on GitHub Pages &mdash; Theme by
+            %a{href: "https://twitter.com/michigangraham"} mattgraham
+    /[if !IE] <script>fixScale(document);</script>
