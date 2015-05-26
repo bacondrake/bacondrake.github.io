@@ -18,6 +18,7 @@ GEM
       execjs
     coffee-script-source (1.9.1.1)
     colorator (0.1)
+    erubis (2.7.0)
     execjs (2.5.2)
     fast-stemmer (1.0.2)
     ffi (1.9.8)
@@ -43,10 +44,17 @@ GEM
     github-pages-health-check (0.2.2)
       net-dns (~> 0.6)
       public_suffix (~> 1.4)
+    haml (4.0.6)
+      tilt
     hitimes (1.2.2)
     html-pipeline (1.9.0)
       activesupport (>= 2)
       nokogiri (~> 1.4)
+    html2haml (2.0.0)
+      erubis (~> 2.7.0)
+      haml (~> 4.0.0)
+      nokogiri (~> 1.6.0)
+      ruby_parser (~> 3.5)
     i18n (0.7.0)
     jekyll (2.4.0)
       classifier-reborn (~> 2.0)
@@ -107,10 +115,14 @@ GEM
       ffi (>= 0.5.0)
     rdiscount (2.1.7)
     redcarpet (3.1.2)
+    ruby_parser (3.6.6)
+      sexp_processor (~> 4.1)
     safe_yaml (1.0.4)
     sass (3.4.13)
+    sexp_processor (4.5.1)
     terminal-table (1.4.5)
     thread_safe (0.3.5)
+    tilt (2.0.1)
     timers (4.0.1)
       hitimes
     toml (0.1.2)
@@ -124,3 +136,4 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  html2haml
